@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Todo App</h1>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+
+        <div class="input-section">
+            <input
+                type="text"
+                id="task-input"
+                placeholder="Enter a task..."
+            >
+
+            <button id="add-button">
+                Add
+            </button>
+        </div>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search tasks..."
+        >
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="pending">
+                Pending
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Completed
+            </button>
+        </div>
+
+        <div class="info">
+            <p id="task-count">Total Tasks: 0</p>
+
+            <button id="clear-completed">
+                Clear Completed
+            </button>
+        </div>
+
+        <ul id="task-list"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
